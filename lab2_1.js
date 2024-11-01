@@ -5,7 +5,6 @@
 let numbers = [1, 2, 3, 4, 5, 6];
 let result = [];
 while (numbers.length > 0) {
-    // Удаляем 3 элемента из исходного массива и добавляем их в result
     result.push(numbers.splice(0, 3));
 }
 
