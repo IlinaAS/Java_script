@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="favicon" href="img/favicon.png">
+    <title>Пиццерия "У Алинки"</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Форма Заказа Пиццы</h1>
+        <h1>"У Алинки"</h1>
+        <form id="pizzaForm">
+            <label for="size">Выберите размер пиццы:</label>
+            <select id="size" onchange="calculatePrice()">
+                <option value="500">Маленькая - 500Руб</option>
+                <option value="650">Средняя - 650Руб</option>
+                <option value="800">Большая - 800Руб</option>
+            </select>
+
+            <fieldset>
+                <legend>Выберите ингредиенты:</legend>
+                <label><input type="checkbox" value="50" onchange="calculatePrice()"> Пепперони (+50Руб)</label>
+                <label><input type="checkbox" value="50" onchange="calculatePrice()"> Грибы (+50Руб)</label>
+                <label><input type="checkbox" value="35" onchange="calculatePrice()"> Лук (+35Руб)</label>
+                <label><input type="checkbox" value="40" onchange="calculatePrice()"> Оливки (+40Руб)</label>
+                <label><input type="checkbox" value="45" onchange="calculatePrice()"> Сыр (+45Руб)</label>
+            </fieldset>
+
+            <h2>Итого: <span id="totalPrice"></span> Руб</h2>
+            <button type="submit">Заказать</button>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
