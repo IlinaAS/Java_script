@@ -1,0 +1,40 @@
+cssbody {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.comment {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.comment-time {
+    font-size: 0.8em;
+    color: gray;
+}
+
+.reply {
+    margin-left: 20px;
+}
+
+.reply-input {
+    margin: 10px 0;
+    width: 100%;
+}
